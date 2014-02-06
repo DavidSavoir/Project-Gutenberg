@@ -7,7 +7,7 @@ documents = [DIV_COMM, MAG_CART]
 # first we need to do something with the user supplied keywords
 # which we're getting with sys.argv. Remember, the script name itself
 # is at index 0 in sys.argv, so we'll slice everything from index 1 forward.
-searches = {}
+searches = "for"
 for kw in sys.argv[1:]:
   searches[kw] = re.compile(r'\b' + kw + r'\b', re.IGNORECASE)
 
